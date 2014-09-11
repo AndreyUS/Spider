@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 
 public class Command {
     //Выводим помощь
-    public static void printHelp(
+    public static void printHelp (
             final Options options,
             final int printedRowWidth,
             final String header,
@@ -21,16 +21,10 @@ public class Command {
         final String commandLineSyntax = "Spider.jar";
         final PrintWriter writer = new PrintWriter(out);
         final HelpFormatter helpFormatter = new HelpFormatter();
-        helpFormatter.printHelp(
-                writer,
-                printedRowWidth,
-                commandLineSyntax,
-                header,
-                options,
-                spacesBeforeOption,
-                spacesBeforeOptionDescription,
-                footer,
-                displayUsage);
+        helpFormatter.printHelp(writer, printedRowWidth, commandLineSyntax,
+                                     header, options, spacesBeforeOption, 
+                                     spacesBeforeOptionDescription, footer, 
+                                     displayUsage);
         writer.flush();
     }
 
