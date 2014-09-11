@@ -12,16 +12,8 @@ public class Message {
     }
 
     public static void showHelp(Options options) {
-        Command.printHelp(
-                options,
-                80,
-                "Commands",
-                "-- HELP --",
-                3,
-                5,
-                true,
-                System.out
-        );
+        Command.printHelp( options, 80, "Commands", "-- HELP --",
+                            3,5, true,System.out);
     }
 
     public static void unrecognizedOption() {
